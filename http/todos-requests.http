@@ -1,0 +1,31 @@
+###
+GET http://localhost:8080/api/v1/todos
+
+
+###
+POST http://localhost:8080/api/v1/todos
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiaWF0IjoxNjQ4NzEyMTgyLCJleHAiOjE2NDkzMTY5ODJ9.DUITc3Nwl2pVz3Vg5tGtsb2_DyPmwMwXaKr8THFVJjoJVXyGJiWs_kPsojJI5bnufJcmJfuaM332ro8kWDsoBg
+Content-Type: application/json
+
+{
+  "title": "hello world",
+  "contents": "nice to meet you"
+}
+
+###
+GET http://localhost:8080/api/v1/todos/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiaWF0IjoxNjQ4NzEyMTgyLCJleHAiOjE2NDkzMTY5ODJ9.DUITc3Nwl2pVz3Vg5tGtsb2_DyPmwMwXaKr8THFVJjoJVXyGJiWs_kPsojJI5bnufJcmJfuaM332ro8kWDsoBg
+
+###
+PUT http://localhost:8080/api/v1/todos/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiaWF0IjoxNjQ4NzEyMTgyLCJleHAiOjE2NDkzMTY5ODJ9.DUITc3Nwl2pVz3Vg5tGtsb2_DyPmwMwXaKr8THFVJjoJVXyGJiWs_kPsojJI5bnufJcmJfuaM332ro8kWDsoBg
+Content-Type: application/json
+
+{
+  "title": "Hello Another World",
+  "contents": "또 만나서 반가워요"
+}
+
+###
+DELETE http://localhost:8080/api/v1/todos/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiaWF0IjoxNjQ4NzEyMTgyLCJleHAiOjE2NDkzMTY5ODJ9.DUITc3Nwl2pVz3Vg5tGtsb2_DyPmwMwXaKr8THFVJjoJVXyGJiWs_kPsojJI5bnufJcmJfuaM332ro8kWDsoBg
